@@ -1,4 +1,5 @@
 {
+   "stack": "heroku-22"
   "name": "Shiori",
   "description": "Shiori is a simple bookmarks manager written in Go language. Intended as a simple clone of Pocket",
   "keywords": [
@@ -6,6 +7,6 @@
     "go",
     "pocket"
   ],
-  "website": "http://github.com/go-shiori/shiori",
-  "repository": "http://github.com/go-shiori/shiori"
+  "website": "http://github.com/Bitsonwheels/heroku-shiori/",
+  "repository": "http://github.com/Bitsonwheels/heroku-shiori/"
 }

@@ -2,9 +2,13 @@ package database
 
 import (
 	"database/sql"
+	"embed"
 
 	"github.com/go-shiori/shiori/internal/model"
 )
+
+//go:embed migrations/*
+var migrations embed.FS
 
 // OrderMethod is the order method for getting bookmarks
 type OrderMethod int
@@ -38,6 +42,9 @@ type GetAccountsOptions struct {
 
 // DB is interface for accessing and manipulating data in database.
 type DB interface {
+	// Migrate runs migrations for this database
+	Migrate() error
+
 	// SaveBookmarks saves bookmarks data to database.
 	SaveBookmarks(bookmarks ...model.Bookmark) ([]model.Bookmark, error)
 
