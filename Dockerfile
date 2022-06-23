@@ -17,4 +17,4 @@ EXPOSE 8080
 ENV SHIORI_DIR /shiori/
 ARG ENV_SHIORI_DB=/shiori/
 ENTRYPOINT ["/usr/bin/shiori"]
-CMD ["serve"]
+CMD ["serve --portable"]
