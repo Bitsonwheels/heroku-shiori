@@ -3,7 +3,7 @@
 package main
 
 import (
-	"github.com/Bitsonwheels/heroku-shiori/internal/cmd"
+	"github.com/go-shiori/shiori/internal/cmd"
 	"github.com/sirupsen/logrus"
 
 	// Database driver
